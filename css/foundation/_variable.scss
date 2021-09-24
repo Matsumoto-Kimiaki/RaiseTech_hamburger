@@ -1,0 +1,14 @@
+//カラー
+$brown:#707070;
+$beige:linear-gradient(#F2EDE9, #DED8D3);
+
+
+//レスポンシブ
+$breakpoints: (
+  //iPhone用
+  "sp": "(max-width: 599px)",
+  //iPad用
+  "tab": "(min-width: 600px)",
+  //PC用
+  "pc": "(min-width: 1025px)"
+);
