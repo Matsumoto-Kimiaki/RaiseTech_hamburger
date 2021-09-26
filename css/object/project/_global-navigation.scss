@@ -1,0 +1,20 @@
+.p-global-navigation {
+  padding-top: 40px;
+  position: relative;
+  
+  &__logo-title {
+      display: block;
+    width: calc(100% * 203/#{$width});
+    height: 53px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__logo-menu {
+position: absolute;
+top: calc(100% * 14/#{$width});
+right: calc(100% * 16/#{$width});
+display: block;
+height: 26px;
+
+  }
+}
