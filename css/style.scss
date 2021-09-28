@@ -9,22 +9,19 @@
 /**
 * Layout
 * ========================== */
-@import "layout/header";
-@import "layout/main";
-@import "layout/footer";
+@import "layout/**";
 
 
 /**
 /* Object
 * ========================== */
 
+
 /* Component ------------ */
-@import "object/component/box";
-@import "object/component/button";
+@import "object/component/**";
 
 /* Project ------------ */
-@import "object/project/global-navigation";
-@import "object/project/search-form";
+@import "object/project/**";
 
 /* Utility ------------ */
 

@@ -3,11 +3,11 @@
   margin-top: 38px;
   display: flex;
   &__box {
-    width: calc(100% * 230 /#{$width});
-    margin-left: calc(100% * 24 /#{$width});
-    margin-right: calc(100% * 12 /#{$width});
+    width: calc(100vw * 230 /#{$width});
+    margin-left: calc(100vw * 24 /#{$width});
+    margin-right: calc(100vw * 12 /#{$width});
     background-color: #fff;
-    padding-left: calc(100% * 17 /#{$width});
+    padding-left: calc(100vw * 17 /#{$width});
   }
   .fas.fa-search {
     font-family: "Font Awesome 5 Free";
@@ -17,7 +17,7 @@
   &__button {
     font-size: 1rem;
     font-weight: bold;
-    width: calc(100% * 78 /#{$width});
+    width: calc(100vw * 78 /#{$width});
     background: $cream;
   }
 }

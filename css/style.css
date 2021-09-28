@@ -151,20 +151,20 @@ input {
   cursor: default;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
   /* Correct the cursor style of increment and decrement buttons in Chrome */
 }
 
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* Correct the odd appearance in Chrome and Safari */
   outline-offset: -2px;
   /* Correct the outline style in Safari */
 }
 
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
   /* Remove the inner padding in Chrome and Safari on macOS */
 }
@@ -203,35 +203,35 @@ select {
 
 /* Apply cursor pointer to button elements */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"],
-[role="button"] {
+[type=button],
+[type=reset],
+[type=submit],
+[role=button] {
   cursor: pointer;
   color: inherit;
 }
 
 /* Remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 /* Replace focus style removed in the border reset above */
 button:-moz-focusring,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   outline: 1px dotted ButtonText;
 }
 
 button,
-html [type='button'],
-[type='reset'],
-[type='submit'] {
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
   /* Correct the inability to style clickable types in iOS */
 }
@@ -311,7 +311,7 @@ progress {
    # Accessibility
    # ================================================================= */
 /* Specify the progress cursor of updating elements */
-[aria-busy="true"] {
+[aria-busy=true] {
   cursor: progress;
 }
 
@@ -321,12 +321,12 @@ progress {
 }
 
 /* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
-[aria-disabled="true"] {
+[aria-disabled=true] {
   cursor: default;
 }
 
 body {
-  font-family: 'M+ M Type-1 (basic latin) Regular', 'M+ Type-1 (general-j) Regular', sans-serif;
+  font-family: "M+ M Type-1 (basic latin) Regular", "M+ Type-1 (general-j) Regular", sans-serif;
   color: #3C2A10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -350,6 +350,11 @@ a:active {
 /**
 * Layout
 * ========================== */
+.l-footer {
+  height: 150px;
+  background-color: blue;
+}
+
 .l-header {
   width: 100%;
   height: 217px;
@@ -358,12 +363,6 @@ a:active {
 
 .l-main {
   height: 2349px;
-  background-color: green;
-}
-
-.l-footer {
-  height: 150px;
-  background-color: blue;
 }
 
 /**
@@ -385,22 +384,18 @@ a:active {
 .p-global-navigation {
   padding-top: 40px;
   position: relative;
+  text-align: center;
 }
-
 .p-global-navigation__logo-title {
-  display: block;
-  width: calc(100% * 203/375);
-  height: 53px;
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(100vw * 203 /375);
+  height: auto;
 }
-
 .p-global-navigation__logo-menu {
+  width: calc(100vw * 51 /375);
+  height: auto;
   position: absolute;
-  top: calc(100% * 14/375);
-  right: calc(100% * 16/375);
-  display: block;
-  height: 26px;
+  top: calc(100vw * 14 /375);
+  right: calc(100vw * 16 /375);
 }
 
 .p-search-form {
@@ -410,28 +405,25 @@ a:active {
   display: -ms-flexbox;
   display: flex;
 }
-
 .p-search-form__box {
-  width: calc(100% * 230 /375);
-  margin-left: calc(100% * 24 /375);
-  margin-right: calc(100% * 12 /375);
+  width: calc(100vw * 230 /375);
+  margin-left: calc(100vw * 24 /375);
+  margin-right: calc(100vw * 12 /375);
   background-color: #fff;
-  padding-left: calc(100% * 17 /375);
+  padding-left: calc(100vw * 17 /375);
 }
-
 .p-search-form .fas.fa-search {
   font-family: "Font Awesome 5 Free";
   font-size: 1.5rem;
   color: #707070;
 }
-
 .p-search-form__button {
   font-size: 1rem;
   font-weight: bold;
-  width: calc(100% * 78 /375);
+  width: calc(100vw * 78 /375);
   background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
+  background: -webkit-linear-gradient(#F2EDE9, #DED8D3);
   background: linear-gradient(#F2EDE9, #DED8D3);
 }
 
 /* Utility ------------ */
-/*# sourceMappingURL=style.css.map */
