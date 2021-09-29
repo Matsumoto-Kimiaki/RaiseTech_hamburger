@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/**
-* Foundation
-* ========================== */
 /*!
  * ress.css • v4.0.0
  * MIT License
@@ -347,14 +344,6 @@ a:active {
   color: inherit;
 }
 
-/**
-* Layout
-* ========================== */
-.l-footer {
-  height: 150px;
-  background-color: blue;
-}
-
 .l-header {
   width: 100%;
   height: 217px;
@@ -365,10 +354,11 @@ a:active {
   height: 2349px;
 }
 
-/**
-/* Object
-* ========================== */
-/* Component ------------ */
+.l-footer {
+  height: 150px;
+  background-color: blue;
+}
+
 .c-box {
   border-radius: 10px;
   border: 1px solid #707070;
@@ -380,7 +370,6 @@ a:active {
   cursor: pointer;
 }
 
-/* Project ------------ */
 .p-global-navigation {
   padding-top: 40px;
   position: relative;
@@ -425,5 +414,3 @@ a:active {
   background: -webkit-linear-gradient(#F2EDE9, #DED8D3);
   background: linear-gradient(#F2EDE9, #DED8D3);
 }
-
-/* Utility ------------ */
