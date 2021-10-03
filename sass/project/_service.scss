@@ -1,0 +1,87 @@
+@use "../global" as *;
+
+.p-service {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; //flex-direction: columnのため、align-itemsで中央揃え
+  @include mq(tab) {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__item {
+    background-image: url(images/index_img01.jpg);
+    width: calc(100vw * 335 /#{$width-sp});
+    @include mq(tab) {
+      width: calc(100vw * 357 /#{$width-tab});
+    }
+
+    &__title {
+      position: relative;
+      font-size: 2.56em;
+      font-weight: bold;
+      padding-top: 13px;
+      margin-left: calc(100vw * 10 /#{$width-sp});
+      margin-bottom: 235px;
+      @include mq(tab) {
+        margin-left: calc(100vw * 10 /#{$width-tab});
+      }
+
+      &::after {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        content: "";
+        width: 10%;
+        height: 4px;
+        background-color: #fff;
+      }
+    }
+
+    &__description {
+      width: calc(100vw * 314 /#{$width-sp});
+      margin-left: calc(100vw * 11 /#{$width-sp});
+      @include mq(tab) {
+        width: calc(100vw * 334 /#{$width-tab});
+        margin-left: calc(100vw * 11 /#{$width-tab});
+      }
+    }
+  }
+}
+
+.p-service__item.-takein {
+  //背景画像のmodifier
+  background-image: url(images/index_img02.jpg);
+}
+
+.p-service dl {
+  background-color: #fff;
+  opacity: 0.8;
+  height: 163px;
+  padding-top: 19px;
+  padding-left: calc(100vw * 11 /#{$width-sp});
+  @include mq(tab) {
+    padding-left: calc(100vw * 11 /#{$width-tab});
+  }
+  dt {
+    font-size: 1.375rem;
+    font-weight: bold;
+  }
+  dd {
+    font-weight: normal;
+    margin-top: 19px;
+  }
+}
+
+.p-service dl + dl {
+  margin-top: 10px;
+}
+
+.p-service section + section {
+  margin-top: 20px;
+  @include mq(tab) {
+    margin-top: 0;
+    margin-left: calc(100vw * 41 /#{$width-tab});
+  }
+}

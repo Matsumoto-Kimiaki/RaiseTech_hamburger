@@ -1,20 +1,45 @@
 @use "../global" as *;
 
 .p-global-navigation {
-  padding-top: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
   text-align: center;
+  opacity: 0.7;
+  @include mq(pc) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(100vw * 65 /#{$width-pc});
+    padding-right: calc(100vw * 31 /#{$width-pc});
+  }
 
   &__logo-title {
-    width: calc(100vw * 203 /#{$width});//imgは置換インライン要素のため、高さ・幅の指定が可能
-    height: auto;
+    margin-top: 40px;
+    margin-bottom: 38px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    @include mq(pc) {
+      margin-top: 0;   //余白の解除
+      margin-bottom: 0;
+      font-size: 4rem;
+    }
   }
 
   &__logo-menu {
-    width: calc(100vw * 51 /#{$width});
+    width: calc(100vw * 51 /#{$width-sp});
     height: auto;
     position: absolute;
-    top: calc(100vw * 14 /#{$width});
-    right: calc(100vw * 16 /#{$width});
+    top: calc(100vw * 14 /#{$width-sp});
+    right: calc(100vw * 16 /#{$width-sp});
+    @include mq(tab) {
+      width: calc(100vw * 86 /#{$width-tab});
+      top: calc(100vw * 18 /#{$width-tab});
+      right: calc(100vw * 26 /#{$width-tab});
+    }
+    @include mq(pc) {
+      display: none;   //とりあえず消しました。サイドバー実装時に変更の可能性あり！！
+    }
   }
 }

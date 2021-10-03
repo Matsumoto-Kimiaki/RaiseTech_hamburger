@@ -1,0 +1,6 @@
+@use "../global" as *;
+
+.p-hero {
+    background-image: url(images/index_hero_img.jpg);
+    padding-left: calc(100vw * 25 /#{$width-sp});
+}
