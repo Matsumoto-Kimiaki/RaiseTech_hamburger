@@ -10,11 +10,21 @@
     flex-direction: row;
     justify-content: center;
   }
+  @include mq(pc) {
+    margin-top: 120px;
+  }
   &__item {
     background-image: url(images/index_img01.jpg);
     width: calc(100vw * 335 /#{$width-sp});
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
     @include mq(tab) {
       width: calc(100vw * 357 /#{$width-tab});
+    }
+    @include mq(pc) {
+      width: calc(100vw * 625 /#{$width-pc});
+      padding-bottom: 20px;
     }
 
     &__title {
@@ -27,6 +37,10 @@
       @include mq(tab) {
         margin-left: calc(100vw * 10 /#{$width-tab});
       }
+      @include mq(pc) {
+        font-size: 5em;
+        margin-bottom: 679px;
+      }
 
       &::after {
         position: absolute;
@@ -36,15 +50,19 @@
         width: 10%;
         height: 4px;
         background-color: #fff;
+        @include mq(pc) {
+          top: 125px;
+        }
       }
     }
 
     &__description {
       width: calc(100vw * 314 /#{$width-sp});
-      margin-left: calc(100vw * 11 /#{$width-sp});
       @include mq(tab) {
         width: calc(100vw * 334 /#{$width-tab});
-        margin-left: calc(100vw * 11 /#{$width-tab});
+      }
+      @include mq(pc) {
+        width: calc(100vw * 585 /#{$width-pc});
       }
     }
   }
@@ -58,15 +76,18 @@
 .p-service dl {
   background-color: #fff;
   opacity: 0.8;
-  height: 163px;
   padding-top: 19px;
   padding-left: calc(100vw * 11 /#{$width-sp});
+  padding-bottom: 46px;
   @include mq(tab) {
     padding-left: calc(100vw * 11 /#{$width-tab});
   }
   dt {
     font-size: 1.375rem;
     font-weight: bold;
+    @include mq(pc) {
+      font-size: 1.5rem;
+    }
   }
   dd {
     font-weight: normal;
@@ -76,6 +97,9 @@
 
 .p-service dl + dl {
   margin-top: 10px;
+  @include mq(pc) {
+    margin-top: 20px;
+  }
 }
 
 .p-service section + section {
@@ -83,5 +107,8 @@
   @include mq(tab) {
     margin-top: 0;
     margin-left: calc(100vw * 41 /#{$width-tab});
+  }
+  @include mq(pc) {
+    margin-left: calc(100vw * 80 /#{$width-pc});
   }
 }

@@ -1,16 +1,16 @@
 @use "../global" as *;
 
 .p-global-navigation {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  text-align: center;
-  opacity: 0.7;
+  padding-bottom: 40px;
+  text-align: center;                   
   @include mq(pc) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
     padding-left: calc(100vw * 65 /#{$width-pc});
     padding-right: calc(100vw * 31 /#{$width-pc});
   }
@@ -21,7 +21,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     @include mq(pc) {
-      margin-top: 0;   //余白の解除
+      margin-top: 0; //余白の解除
       margin-bottom: 0;
       font-size: 4rem;
     }
@@ -29,17 +29,21 @@
 
   &__logo-menu {
     width: calc(100vw * 51 /#{$width-sp});
-    height: auto;
     position: absolute;
-    top: calc(100vw * 14 /#{$width-sp});
+    top: 14px;
     right: calc(100vw * 16 /#{$width-sp});
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
     @include mq(tab) {
       width: calc(100vw * 86 /#{$width-tab});
-      top: calc(100vw * 18 /#{$width-tab});
+      top: 18px;
       right: calc(100vw * 26 /#{$width-tab});
+      font-size: 2.125rem;
     }
     @include mq(pc) {
-      display: none;   //とりあえず消しました。サイドバー実装時に変更の可能性あり！！
+      top: 97px;
+      right: calc(100vw * 149 /#{$width-pc});
     }
   }
 }

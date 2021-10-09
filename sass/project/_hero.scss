@@ -1,6 +1,13 @@
 @use "../global" as *;
 
 .p-hero {
-    background-image: url(images/index_hero_img.jpg);
-    padding-left: calc(100vw * 25 /#{$width-sp});
+  background-image: url(images/index_hero_img.jpg);
+  padding-left: calc(100vw * 25 /#{$width-sp});
+  &__title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    @include mq(pc) {
+      font-size: 2.5rem;
+    }
+  }
 }

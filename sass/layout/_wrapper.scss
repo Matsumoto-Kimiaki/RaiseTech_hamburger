@@ -1,0 +1,7 @@
+@use "../global" as *;
+
+.l-wrapper {
+    @include mq(pc) {
+    width: calc(100vw * 1553 /#{$width-pc});
+    }
+}
