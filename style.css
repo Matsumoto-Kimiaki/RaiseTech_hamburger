@@ -877,6 +877,11 @@ a:active {
   background-color: #000;
   opacity: 0.29;
 }
+@media (min-width: 600px) {
+  .p-access__layer {
+    height: 100%;
+  }
+}
 @media (min-width: 1025px) {
   .p-access__layer {
     width: 61.2%;

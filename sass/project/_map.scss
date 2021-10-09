@@ -85,6 +85,9 @@
       z-index: 20;
       background-color: #000;
       opacity: 0.29;
+      @include mq(tab) {
+        height: 100%;
+      }
       @include mq(pc) {
         width: 61.2%;
         height: 100%;
