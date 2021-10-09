@@ -3,6 +3,13 @@
 .p-hero {
   background-image: url(images/index_hero_img.jpg);
   padding-left: calc(100vw * 25 /#{$width-sp});
+  height: 285px;
+  display: flex;
+  align-items: center;
+  @include mq(pc) {
+    height: 530px;
+  }
+
   &__title {
     font-size: 2.25rem;
     font-weight: bold;

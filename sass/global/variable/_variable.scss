@@ -1,5 +1,5 @@
 //カラー
-$brown:#707070;
+$grey:#707070;
 $beige:#FFF7EF;
 $cream:linear-gradient(#F2EDE9, #DED8D3);
 
@@ -15,5 +15,6 @@ $breakpoints: (
   //iPad用
   "tab": "(min-width: 600px)",
   //PC用
-  "pc": "(min-width: 1025px)"
+  "pc": "(min-width: 1025px)",
+  "pc2": "(min-width: 1400px)"
 );

@@ -60,6 +60,7 @@
       width: calc(100vw * 314 /#{$width-sp});
       @include mq(tab) {
         width: calc(100vw * 334 /#{$width-tab});
+        max-width: 390px;
       }
       @include mq(pc) {
         width: calc(100vw * 585 /#{$width-pc});
@@ -68,8 +69,7 @@
   }
 }
 
-.p-service__item.-takein {
-  //背景画像のmodifier
+.p-service__item.-takein {    //背景画像のmodifier
   background-image: url(images/index_img02.jpg);
 }
 
