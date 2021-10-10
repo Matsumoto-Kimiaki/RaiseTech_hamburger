@@ -5,8 +5,7 @@
   position: relative;
 
   &__description {
-    background-color: #000;
-    padding-top: 107px;
+    padding-top: 107px;     //要素に高さを持たせるため、z-indexは使わない
     padding-bottom: 51px;
     @include mq(tab) {
       padding-top: 122px;
@@ -15,6 +14,17 @@
     @include mq(pc) {
       padding-top: 253px;
       padding-bottom: 65px;
+    }
+    
+    &::after {
+      content: "";            //黒い背景は疑似要素を使って、一番下層に指定
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: -3;
     }
 
     h2 {
@@ -72,7 +82,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 10;
+      z-index: -2;        //文字より下層に位置指定
       opacity: 0.6;
     }
 
@@ -82,7 +92,7 @@
       left: 0;
       width: 100%;
       height: 60%;
-      z-index: 20;
+      z-index: -1;         //文字より下層に位置指定
       background-color: #000;
       opacity: 0.29;
       @include mq(tab) {
