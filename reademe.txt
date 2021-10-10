@@ -1,0 +1,2 @@
+Dart-Sassで記述しています。
+コンパイラーはgulpを使用し、コマンド「npx gulp compile」でコンパイルされます。
