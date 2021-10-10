@@ -7,7 +7,7 @@
 ## 説明
 - Dart-Sassで記述
 - gulpを使用
-  - コマンド「ngx gulp compile」でコンパイルされます
+  - コマンド「npx gulp compile」でコンパイルされます
   - プラグイン
     - sass
     - gulp-sass
