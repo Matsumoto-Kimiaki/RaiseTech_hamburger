@@ -17,14 +17,14 @@
     }
     
     &::after {
-      content: "";            //黒い背景は疑似要素を使って、一番下層に指定
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: #000;
-      z-index: -3;
+      z-index: -3;                //黒い背景は疑似要素を使って、一番下層に指定
     }
 
     h2 {

@@ -15,7 +15,7 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require("gulp-autoprefixer");
 
 //----------------------------------------------------------------------
-//  関数定義
+//  compile関数定義
 //----------------------------------------------------------------------
 function compile(done) {
   src("./sass/*.scss")
