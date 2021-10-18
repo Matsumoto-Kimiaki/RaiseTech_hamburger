@@ -6,6 +6,7 @@
 //----------------------------------------------------------------------
 //  モジュール読み込み
 //----------------------------------------------------------------------
+const gulp = require("gulp");
 const { src, dest, watch, series, parallel } = require("gulp");
 
 const plumber = require("gulp-plumber");
