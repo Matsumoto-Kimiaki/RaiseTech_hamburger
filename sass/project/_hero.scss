@@ -97,3 +97,38 @@
     z-index: 2;
   }
 }
+
+.p-hero--single {
+  width: 100%;
+  height: auto;
+  background-image: url(images/single_hero_img.jpg);
+  aspect-ratio: 5/3;
+  display: flex;
+  align-items: center;
+  padding-left: calc(100vw * 26 /#{$width-sp});
+  @include mq(tab) {
+    aspect-ratio: 834/500;
+    padding-left: calc(100vw * 86 /#{$width-tab});
+  }
+  @include mq(pc) {
+    width: calc(100vw * 1553 /#{$width-pc});
+    aspect-ratio: 1553/500;
+    padding-left: calc(100vw * 86 /#{$width-pc});
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    @include mq(sp) {
+      font-size: 2.25rem;
+    }
+    font-weight: bold;
+    @include mq(tab) {
+      font-size: 3.75rem;
+    }
+  }
+}
+
+.p-hero--page {
+  @extend .p-hero--single;
+  background-image: url(images/page_hero_img.jpg);
+}

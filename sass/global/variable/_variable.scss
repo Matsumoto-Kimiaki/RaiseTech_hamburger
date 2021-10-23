@@ -11,7 +11,7 @@ $width-pc: 1920;
 //レスポンシブ
 $breakpoints: (
   //iPhone用
-  "sp": "(max-width: 599px)",
+  "sp": "(min-width: 340px)",
   //iPad用
   "tab": "(min-width: 600px)",
   //PC用
