@@ -1,4 +1,5 @@
-@use "../global" as *;
+@use "../foundation/mixin" as *;
+@use "../foundation/variable" as *;
 
 .l-grid {
   @include mq(pc) {
