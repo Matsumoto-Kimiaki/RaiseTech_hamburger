@@ -3,6 +3,8 @@
 
 .p-hero {
   background-image: url(images/index_hero_img.jpg);
+  background-size: cover;
+  background-position: center center;
   padding-left: calc(100vw * 25 /#{$width-sp});
   height: 285px;
   display: flex;
@@ -103,6 +105,8 @@
   width: 100%;
   height: auto;
   background-image: url(images/single_hero_img.jpg);
+  background-size: cover;
+  background-position: center center;
   aspect-ratio: 5/3;
   display: flex;
   align-items: center;

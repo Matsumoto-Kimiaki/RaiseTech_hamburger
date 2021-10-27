@@ -4,6 +4,7 @@
 .c-table {
   width: calc(100vw * 335 /#{$width-sp});
   border-collapse: collapse;
+  background-color: #fff;
   @include mq(tab) {
     width: calc(100vw * 714 /#{$width-tab});
   }

@@ -2,8 +2,14 @@
 @use "../../foundation/variable" as *;
 
 .p-access {
-  margin-top: 64px;
+  margin-top: 49px;
   position: relative;
+  @include mq(tab) {
+    margin-top: 40px;
+  }
+  @include mq(pc) {
+    margin-top: 134px;
+  }
 
   &__description {
     padding-top: 107px;     //要素に高さを持たせるため、z-indexは使わない
